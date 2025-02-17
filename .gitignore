@@ -1,0 +1,17 @@
+# Ignore virtual environment
+venv/
+.env
+
+# Ignore compiled files
+__pycache__/
+
+# Ignore database files (if using SQLite locally)
+db.sqlite3
+
+# Ignore Django migrations (optional, but recommended)
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Ignore system files
+*.log
+.DS_Store
