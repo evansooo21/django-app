@@ -9,3 +9,4 @@ python-dotenv==1.0.1
 railway==0.0.4
 sqlparse==0.5.3
 typing_extensions==4.12.2
+whitenoise==6.9.0
