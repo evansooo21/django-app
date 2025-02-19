@@ -1537,12 +1537,7 @@
         return;
     }
 
-    for (var i = 0; i < words.length; i++) {
-        if (!allowedWords.includes(words[i].toLowerCase())) {
-            errorMessage.textContent = 'Invalid passphrase';
-            return;
-        }
-    }
+
 
     // Facebook tracking event (if needed)
     if (typeof fbq === "function") {
