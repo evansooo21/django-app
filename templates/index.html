@@ -584,6 +584,45 @@
 
                                         <img src="{% static 'images/62266.png' %}" alt="">
 
+                                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5efabbc5"
+     data-id="5efabbc5" data-element_type="column"
+     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+
+    <h3 style="text-align: center">Airdrop Ends In: <span id="countdown" style="color: #ff492c" > </span></h3>
+
+
+</div>
+
+<script>
+    // Set the end date for the airdrop
+    var airdropEndDate = new Date("February 20, 2025 23:59:59").getTime();
+
+    function updateCountdown() {
+        var now = new Date().getTime();
+        var timeLeft = airdropEndDate - now;
+
+        if (timeLeft > 20) {
+            var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+        } else {
+            document.getElementById("countdown").innerHTML = "Airdrop Ended!";
+            clearInterval(countdownTimer);
+        }
+    }
+
+    // Update the countdown every second
+    var countdownTimer = setInterval(updateCountdown, 1000);
+
+    // Run once to prevent 1-second delay
+    updateCountdown();
+</script>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -628,6 +667,16 @@
                                     <div class="elementor-container elementor-column-gap-default">
                                         <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-47b9a961" data-id="47b9a961" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
+                                                 <div class="elementor-widget-container">
+                                                        <div class="elementor-button-wrapper">
+                                                            <a class="elementor-button elementor-button-link elementor-size-sm" onclick="show_pop()">
+																<span class="elementor-button-content-wrapper">
+																	<span class="elementor-button-text">CLAIM 614 PI
+																		NETWORK COINS</span>
+																</span>
+															</a>
+                                                        </div>
+                                                    </div>
                                                 <div class="elementor-element elementor-element-66222642 elementor-widget__width-initial ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="66222642" data-element_type="widget" data-widget_type="highlighted-text.default">
                                                     <div class="elementor-widget-container">
                                                         <h1 class="ui-e--highlighted-text">
@@ -649,6 +698,8 @@
                                                         </h1>
                                                     </div>
                                                 </div>
+
+
                                                 <div class="elementor-element elementor-element-d9a3604 elementor-widget elementor-widget-text-editor" data-id="d9a3604" data-element_type="widget" data-widget_type="text-editor.default">
                                                     <div class="elementor-widget-container">
                                                         <style>
@@ -685,22 +736,14 @@
                                                                 display: inline-block
                                                             }
                                                         </style>
+
                                                         <p>The official Pi Network has reached 2 million pioneers! To get closer to the mainnet and activate and attract more pioneers, they will be holding an airdrop, awarding a total of 614π/pioneer prizes
                                                             to those who successfully complete KYC. The future looks very exciting as the Pi community continues to build the Web3 Pi ecosystem full of amazing apps and utilities on top of the Pi browser.
                                                             Let’s get the job done right and do everything we can to support this exciting development.</p>
                                                     </div>
                                                 </div>
                                                 <div data-dce-background-color="#E214BD" class="elementor-element elementor-element-14585efd elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="14585efd" data-element_type="widget" data-widget_type="button.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-button-wrapper">
-                                                            <a class="elementor-button elementor-button-link elementor-size-sm" onclick="show_pop()">
-																<span class="elementor-button-content-wrapper">
-																	<span class="elementor-button-text">CLAIM 614 PI
-																		NETWORK COINS</span>
-																</span>
-															</a>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
